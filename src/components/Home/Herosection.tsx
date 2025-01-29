@@ -1,4 +1,3 @@
-// Herosection.js
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +18,7 @@ export default function Herosection() {
         
         {/* Floating Icons */}
         <div className="relative z-10 w-full lg:w-1/4 flex justify-center items-center flex-col lg:gap-2 mb-6 lg:mb-0">
-          <div className="flex flex-wrap justify-center lg:flex-col space-x-6 space-y-6 lg:space-x-0 lg:space-y-6 mb-6">
+          <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mb-6">
             <div className="w-10 h-10">
               <Image src="/x.svg" alt="Twitter Icon" width={30} height={30} />
             </div>
