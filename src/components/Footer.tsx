@@ -9,39 +9,40 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer
-    className="text-white py-8"
-    style={{
-      backgroundImage: `url('/Footbg.svg')`,
-      backgroundSize: 'auto', 
-      backgroundPosition: 'bottom right', 
-      backgroundRepeat: 'no-repeat', 
-    }}
-  >
-  
+      className="text-white py-8"
+      style={{
+        backgroundImage: `url('/Footbg.svg')`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'bottom right',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       {/* Subscribe Section */}
-      <div className="text-white py-8 px-2 border-b-2 border-yellow-600 bg-origin-padding flex flex-col md:flex-row justify-center items-center gap-10 bg-black/60">
-        <div className="text-center md:text-left">
-          <h2 className="text-2xl mb-2 font-bold">
-            <span className="text-orange-500">St</span>ill You Need Our Support?
-          </h2>
-          <p className="text-gray-400">
-            Don’t wait, make a smart & logical choice here. It’s pretty easy.
-          </p>
-        </div>
-        <div className="flex items-center gap-3 mt-4 md:mt-0">
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            className="p-3 text-black bg-orange-500 border border-orange-500 rounded-l-md focus:outline-none focus:ring focus:ring-orange-300 w-64"
-          />
-          <button className="p-3 bg-purple-600 text-white hover:bg-purple-700 rounded-r-md">
-            Subscribe Now
-          </button>
+      <div className="text-white py-8 px-4 border-b-2 border-yellow-600 bg-black/60">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-6">
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl font-bold">
+              <span className="text-orange-500">St</span>ill You Need Our Support?
+            </h2>
+            <p className="text-gray-400 mt-2">
+              Don’t wait, make a smart & logical choice here. It’s pretty easy.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              className="p-3 text-black bg-orange-500 border border-orange-500 rounded-md sm:rounded-l-md sm:rounded-r-none focus:outline-none focus:ring focus:ring-orange-300 w-full sm:w-64"
+            />
+            <button className="p-3 bg-purple-600 text-white hover:bg-purple-700 rounded-md sm:rounded-r-md sm:rounded-l-none w-full sm:w-auto">
+              Subscribe Now
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Footer Content */}
-      <div className="container mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 bg-black/60">
+      <div className="container mx-auto px-4 sm:px-8 py-8 grid grid-cols-1 md:grid-cols-4 gap-8 bg-black/60">
         {/* About Us Section */}
         <div>
           <h2 className="text-lg font-bold mb-4">About Us</h2>
